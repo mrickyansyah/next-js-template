@@ -52,7 +52,7 @@ export default function NavbarWrapper({ children }: NavbarWrapperProps) {
                     <NotificationsDropdown />
 
                     <Link
-                        href="https://github.com/mrickyansyah/next-ui-template"
+                        href="https://github.com/mrickyansyah/next-js-template"
                         target={"_blank"}
                     >
                         <GithubIcon2 />
