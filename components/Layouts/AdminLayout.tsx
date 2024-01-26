@@ -4,6 +4,7 @@ import NavbarWrapper from "../Admin/Navbar/Wrapper";
 import { useState } from "react";
 import SidebarWrapper from "../Admin/Sidebar/Wrapper";
 import { SidebarContext } from "@/context/admin/sidebar";
+import BreadcrumbsProvider from "../Provider/BreadcrumbsProvider";
 
 interface AdminLayoutProps {
     children: React.ReactNode;
@@ -25,12 +26,14 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
                 setCollapsed: handleToggleSidebar,
             }}
         >
-            <section className="flex">
-                <SidebarWrapper />
-                <NavbarWrapper>
-                    <div className="h-full lg:px-6 lg:py-4">{children}</div>
-                </NavbarWrapper>
-            </section>
+            <BreadcrumbsProvider>
+                <section className="flex">
+                    <SidebarWrapper />
+                    <NavbarWrapper>
+                        <div className="h-full lg:px-6 lg:py-4">{children}</div>
+                    </NavbarWrapper>
+                </section>
+            </BreadcrumbsProvider>
         </SidebarContext.Provider>
     );
 }
