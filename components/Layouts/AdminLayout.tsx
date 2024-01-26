@@ -1,31 +1,15 @@
-"use client";
-import { useLockedBody } from "@/hooks/useBodyLock";
 import NavbarWrapper from "../Admin/Navbar/Wrapper";
-import { useState } from "react";
 import SidebarWrapper from "../Admin/Sidebar/Wrapper";
-import { SidebarContext } from "@/context/admin/sidebar";
 import BreadcrumbsProvider from "../Provider/BreadcrumbsProvider";
+import SidebarProvider from "../Provider/SidebarProvider";
 
 interface AdminLayoutProps {
     children: React.ReactNode;
 }
 
 export default function AdminLayout({ children }: AdminLayoutProps) {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
-    const [_, setLocked] = useLockedBody(false);
-
-    const handleToggleSidebar = (): void => {
-        setSidebarOpen(!sidebarOpen);
-        setLocked(!sidebarOpen);
-    };
-
     return (
-        <SidebarContext.Provider
-            value={{
-                collapsed: sidebarOpen,
-                setCollapsed: handleToggleSidebar,
-            }}
-        >
+        <SidebarProvider>
             <BreadcrumbsProvider>
                 <section className="flex">
                     <SidebarWrapper />
@@ -34,6 +18,6 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
                     </NavbarWrapper>
                 </section>
             </BreadcrumbsProvider>
-        </SidebarContext.Provider>
+        </SidebarProvider>
     );
 }
