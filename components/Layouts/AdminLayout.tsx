@@ -1,9 +1,9 @@
 "use client";
-import { SidebarContext } from "@/context/admin-layout-context";
 import { useLockedBody } from "@/hooks/useBodyLock";
 import NavbarWrapper from "../Admin/Navbar/Wrapper";
 import { useState } from "react";
 import SidebarWrapper from "../Admin/Sidebar/Wrapper";
+import { SidebarContext } from "@/context/admin/sidebar";
 
 interface AdminLayoutProps {
     children: React.ReactNode;

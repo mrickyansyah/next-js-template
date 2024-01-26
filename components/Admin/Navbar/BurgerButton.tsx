@@ -1,4 +1,4 @@
-import { useSidebarContext } from "@/context/admin-layout-context";
+import { useSidebarContext } from "@/context/admin/sidebar";
 import { StyledBurgerButton } from "./navbar.styles";
 
 export default function BurgerButton() {

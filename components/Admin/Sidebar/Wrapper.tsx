@@ -1,10 +1,10 @@
-import { useSidebarContext } from "@/context/admin-layout-context";
 import { usePathname } from "next/navigation";
 import { Sidebar } from "./sidebar.styles";
 import SidebarMenu from "./Menu";
 import SidebarHeader from "./Header";
 import SidebarFooter from "./Footer";
 import { getRoutes } from "@/services/routes";
+import { useSidebarContext } from "@/context/admin/sidebar";
 
 export default function SidebarWrapper() {
     const pathname = usePathname();
