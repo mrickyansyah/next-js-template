@@ -1,11 +1,8 @@
-export type TableColumns = typeof columns;
-export type UserData = typeof users;
-
 export const columns = [
-   {name: 'NAME', uid: 'name'},
-   {name: 'ROLE', uid: 'role'},
-   {name: 'STATUS', uid: 'status'},
-   {name: 'ACTIONS', uid: 'actions'},
+   {title: 'NAME', name: 'name'},
+   {title: 'ROLE', name: 'role'},
+   {title: 'STATUS', name: 'status'},
+   {title: 'ACTIONS', name: 'actions'},
 ];
 export const users = [
    {

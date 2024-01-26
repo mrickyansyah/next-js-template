@@ -7,6 +7,7 @@ import CardBalance3 from "./CardBalance3";
 import CardTransactions from "./CardTransactions";
 import TableWrapper from "@/components/Admin/Table";
 import CardChart from "./CardChart";
+import { columns, users } from "@/components/Admin/Table/data";
 
 export default function Dashboard() {
     return (
@@ -59,7 +60,7 @@ export default function Dashboard() {
                         View All
                     </Link>
                 </div>
-                <TableWrapper />
+                <TableWrapper columns={columns} data={users} />
             </div>
         </>
     );

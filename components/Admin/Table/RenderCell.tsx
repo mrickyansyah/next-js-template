@@ -1,11 +1,11 @@
 import { User, Tooltip, Chip } from "@nextui-org/react";
-import { users } from "./data";
 import { EyeIcon } from "@/components/Icons/EyeIcon";
 import { EditIcon } from "@/components/Icons/EditIcon";
 import { DeleteIcon } from "@/components/Icons/DeleteIcon";
+import { TableData } from ".";
 
 interface RenderCellProps {
-    user: (typeof users)[number];
+    user: TableData;
     columnKey: string | React.Key;
 }
 
