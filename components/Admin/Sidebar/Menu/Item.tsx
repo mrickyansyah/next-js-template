@@ -1,3 +1,4 @@
+"use client";
 import { useSidebarContext } from "@/context/admin/sidebar";
 import clsx from "clsx";
 import NextLink from "next/link";

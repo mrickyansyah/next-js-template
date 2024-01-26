@@ -1,3 +1,4 @@
+"use client";
 import { ChevronUpIcon } from "@/components/Icons/ChevronUpIcon";
 import { RouteInterface } from "@/services/routes";
 import { Accordion, AccordionItem } from "@nextui-org/react";
