@@ -1,6 +1,5 @@
-import { ModalFormProps } from "@/app/admin/payments/components/TableDynamic/ButtonAddNew";
+import { ModalFormProps } from "@/components/Admin/Table/Dynamic/ButtonAddNew";
 import { createContext, useContext } from "react";
-import { KeyedMutator } from "swr";
 
 interface ModalFormContext {
     mutate: any;
