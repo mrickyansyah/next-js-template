@@ -6,8 +6,8 @@ import { Button, Input } from "@nextui-org/react";
 import AddUser from "./components/AddUser";
 import { ExportIcon } from "@/components/Icons/ExportIcon";
 import TableWrapper from "@/components/Admin/Table";
-import { columns, users } from "@/components/Admin/Table/data";
 import UserBreadcrumbs from "./components/UserBreadcrumbs";
+import { columns, users } from "@/components/Admin/Table/data";
 
 export default function Page() {
     return (

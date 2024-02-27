@@ -24,7 +24,7 @@ const admin: RouteInterface[] = [
         title: "Main Menu",
         children: [
             {
-                path: "/accounts",
+                path: "/users",
                 title: "Accounts",
                 icon: <AccountsIcon />,
             },

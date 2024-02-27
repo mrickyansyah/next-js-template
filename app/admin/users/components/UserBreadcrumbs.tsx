@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const breadcrumbs: BreadcrumbsInterface[] = [
     {
-        href: "/admin/accounts",
+        href: "/admin/users",
         title: "Users",
         icon: <UsersIcon />,
     },

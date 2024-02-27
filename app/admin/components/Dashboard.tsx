@@ -52,7 +52,7 @@ export default function Dashboard() {
                         Latest Users
                     </h3>
                     <Link
-                        href="/admin/accounts"
+                        href="/admin/users"
                         as={NextLink}
                         color="primary"
                         className="cursor-pointer"
